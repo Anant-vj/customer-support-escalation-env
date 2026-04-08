@@ -3,6 +3,10 @@ name = "customer-support-escalation-env"
 version = "0.1.0"
 description = "OpenEnv customer support escalation environment"
 requires-python = ">=3.10"
+dependencies = ["openenv-core>=0.2.0"]
+
+[project.scripts]
+server = "server.app:main"
 
 [build-system]
 requires = ["setuptools"]
