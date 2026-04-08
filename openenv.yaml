@@ -1,0 +1,17 @@
+name: customer-support-escalation-env
+version: "1.0.0"
+description: "Customer support ticket escalation environment for training AI agents on real-world triage with misleading signals"
+tasks:
+  - id: basic_triage
+    name: Basic Triage
+    difficulty: easy
+  - id: mixed_signals
+    name: Mixed Signals
+    difficulty: medium
+  - id: context_trap
+    name: Context Trap
+    difficulty: hard
+action_space: discrete
+observation_space: structured
+reward_range: [-0.3, 1.0]
+max_steps: 12
